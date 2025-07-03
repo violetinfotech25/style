@@ -1,0 +1,174 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}Course{% endblock title %}
+{% block body %}
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Course</h2>
+           <ol class="breadcrumb">
+            <li><a href="{% url 'home' %}">Home</a></li>            
+            <li class="active">Course</li>
+          </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
+ <section id="mu-course-content">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-course-content-area">
+            <div class="row">
+              <div class="col-md-9">
+                <!-- start course content container -->
+                <div class="mu-course-container">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                    <div class="mu-latest-course-single">
+                      <figure class="mu-latest-course-img">
+                        <a href="{% url 'course1'%}"><img src="{% static 'img/genesysimg/gen-7.jpeg' %}" alt="img"></a>
+                        <figcaption class="mu-latest-course-imgcaption">
+                          <a href="{% url 'course1'%}">HAE-DNA-846</a>
+                          <span><i class="fa fa-clock-o"></i>2 Years</span>
+                        </figcaption>
+                      </figure>
+                      <div class="mu-latest-course-single-content ">
+                        <h4 style="color: red;">1st Year 20,000</h4>
+                        <h4 style="color: red;">2nd Year 25,000</h4>
+                        <h4 style="color: red;">-----Food and accommodation free-----</a></h4>
+                        <p>This advanced-level course designed to offer a deep dive into the structure, function, & analytical techniques related to human & environmental DNA.</p>
+                        
+                      </div>
+                    </div> 
+                  </div>                  
+                  <div class="col-md-6 col-sm-6">
+                    <div class="mu-latest-course-single">
+                      <figure class="mu-latest-course-img">
+                        <a href="{% url 'course2'%}"><img src="{% static 'img/genesysimg/gen-9.jpeg' %}" alt="img"></a>
+                        <figcaption class="mu-latest-course-imgcaption">
+                          <a href="{% url 'course2'%}">	 HAE-DHNM-847  </a>
+                          <span><i class="fa fa-clock-o"></i>2 Years</span>
+                        </figcaption>
+                      </figure>
+                      <div class="mu-latest-course-single-content">
+                        <h4 style="color: red;">1st Year 30,000</h4>
+                        <h4 style="color: red;">2nd Year 35,000</h4>
+                        <h4 style="color: red;">-----Food and accommodation free-----</h4>
+                        <p>Generally cover foundational subjects like anatomy, physiology, and microbiology, 
+                          along with core nursing skills and clinical practice</p> 
+                      </div>
+                    </div>
+                  </div>
+                  
+                  </div>
+                </div>
+                <!-- end course content container -->
+                <!-- start course pagination -->
+                <div class="mu-pagination">
+                  <nav>
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span class="fa fa-angle-left"></span> Page
+                        </a>
+                      </li>
+                      <li class="active"><a href="#">1</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- end course pagination -->
+              </div>
+              <div class="col-md-3">
+                <!-- start sidebar -->
+                <aside class="mu-sidebar">
+                  <!-- start single sidebar -->
+                  <div class="mu-single-sidebar">
+                    <h3><b>Course Categories</b></h3>
+                    <ul class="mu-sidebar-catg">
+                      <li><a style="padding-left: 25px;">Nursing Fundamentals</a></li>
+                      <li><a style="padding-left: 25px;">Medical-Surgical Nursing</a></li>
+                      <li><a style="padding-left: 25px;">Pediatrics Nursing</a></li>
+                      <li><a style="padding-left: 25px;">Operation Theater Nursing</a></li>
+                      <li><a style="padding-left: 25px;">Labour Ward Nursing</a></li>
+                      <li><a style="padding-left: 25px;">Neonatal Nursing</a></li>
+                  </ul>
+
+                </div>
+                
+                  <!-- end single sidebar -->
+                  <!-- start single sidebar -->
+                  <div class="mu-single-sidebar">
+                    <h3><b>Popular Course</b></h3>
+                    <div class="mu-sidebar-popular-courses">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="{% url 'course1'%}">
+                            <img class="media-object" src="{% static 'img/genesysimg/gen-7.jpeg' %}" alt="img">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a><b>1. HAE-DNA-846</b></a></h4>                      
+                          <span class="popular-course-price">25,000</span>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="{% url 'course2'%}">
+                            <img class="media-object" src="{% static 'img/genesysimg/gen-9.jpeg' %}" alt="img">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a><b>2. HAE-DHNM-847</b></a></h4>                      
+                          <span class="popular-course-price">35,000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end single sidebar -->
+                  <!-- start single sidebar -->
+                  <!-- <div class="mu-single-sidebar">
+                    <h3>Archives</h3>
+                    <ul class="mu-sidebar-catg mu-sidebar-archives">
+                      <li><a href="#">May <span>(25)</span></a></li>
+                      <li><a href="">June <span>(35)</span></a></li>
+                      <li><a href="">July <span>(20)</span></a></li>
+                      <li><a href="">August <span>(125)</span></a></li>
+                      <li><a href="">September <span>(45)</span></a></li>
+                      <li><a href="">October <span>(85)</span></a></li>
+                    </ul>
+                  </div> -->
+                  <!-- end single sidebar -->
+                  <!-- start single sidebar -->
+                  <!-- <div class="mu-single-sidebar">
+                    <h3>Tags Cloud</h3>
+                    <div class="tag-cloud">
+                      <a href="#">Health</a>
+                      <a href="#">Science</a>
+                      <a href="#">Sports</a>
+                      <a href="#">Mathematics</a>
+                      <a href="#">Web Design</a>
+                      <a href="#">Admission</a>
+                      <a href="#">History</a>
+                      <a href="#">Environment</a>
+                    </div>
+                  </div> -->
+                  <!-- end single sidebar -->
+                </aside>
+                <!-- / end sidebar -->
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+{% endblock body %}

@@ -1,0 +1,444 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}Gallery{% endblock title %}
+{% block body %}
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+<section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Gallery</h2>
+           <ol class="breadcrumb">
+            <li><a href="{% url 'home' %}">Home</a></li>            
+            <li class="active">Gallery</li>
+          </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
+ <!-- Start gallery  -->
+ <section id="mu-gallery">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-gallery-area">
+          <!-- start title -->
+          <div class="mu-title">
+            <h2><i>Cherishable moments</i></h2>
+            <p>Take a look behind the scenes at our nursing courses, where learning meets passion, and skills come to life. From simulations to certification ceremonies, our students and instructors make every moment count.</p>
+          </div>
+          <!-- end title -->
+          <!-- start gallery content -->
+          <div class="mu-gallery-content">
+            <!-- Start gallery menu -->
+            <div class="mu-gallery-top">              
+              <ul>
+                <li class="filter active" data-filter="all">All</li>
+                <li class="filter" data-filter=".lab">Lab</li>
+                <li class="filter" data-filter=".classroom">Class Room</li>
+                <li class="filter" data-filter=".library">Rooms</li>
+                <li class="filter" data-filter=".cafe">Little Nest</li>
+                <li class="filter" data-filter=".machines">x-Ray unit</li>
+                <li class="filter" data-filter=".service">Service</li>
+                <li class="filter" data-filter=".doctors">Doctors</li>
+                <li class="filter" data-filter=".admin">Admin</li>
+                <li class="filter" data-filter=".others">Others</li>
+              </ul>
+            </div>
+            <!-- End gallery menu -->
+            <div class="mu-gallery-body">
+              <ul id="mixit-container" class="row">
+                <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix lab">
+                  <a href="{% static 'img/genesysimg/gen-15.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-15.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Medical Lab</h4>
+                          <p>Testing</p>
+                        </div>
+                      </div>                  
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <!-- start single gallery image -->
+               <li class="col-md-4 col-sm-6 col-xs-12 mix library">
+                 <a href="{% static 'img/genesysimg/gen-7.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-7.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Labour Theater</h4>
+                          <p>Comfort care</p>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                 </a>
+               </li>
+                <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                  <a href="{% static 'img/genesysimg/gen-17.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-17.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Control Room</h4>
+                          <p>System Control</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix admin">
+                  <a href="{% static 'img/genesysimg/gen-12.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-12.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Management</h4>
+						  <p></p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix classroom">
+                  <a href="{% static 'img/genesysimg/gen-18.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-18.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Class Room</h4>
+                          <p>Training</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <!-- start single gallery image -->
+                
+                <li class="col-md-4 col-sm-6 col-xs-12 mix lab">
+                  <a href="{% static 'img/genesysimg/gen-11.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-11.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Medical Lab</h4>
+                          <p>Testing</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix cafe">
+                  <a href="{% static 'img/genesysimg/gen-5.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                         <img alt="img" src="{% static 'img/genesysimg/gen-5.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                         <h4>Neonatal Intensive Care</h4>
+						 <p>Infant Health</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix cafe">
+                  <a href="{% static 'img/genesysimg/gen-6.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-6.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Neonatal Intensive Care</h4>
+						  <p>Infant Health</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                
+                <!--Machines-->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix machines">
+                  <a href="{% static 'img/genesysimg/gen-19.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-19.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>x-Ray unit</h4>
+                          <p>Advanced Equipment</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix machines">
+                  <a href="{% static 'img/genesysimg/gen-20.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-20.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>C-Arm Machine</h4>
+                          <p>Advanced Equipment</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix machines">
+                  <a href="{% static 'img/genesysimg/gen-24.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-24.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Scan Room</h4>
+                          <p>Advanced Equipment</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                
+                <!-- Service -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix service">
+                  <a href="{% static 'img/gen-23-1.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/gen-23-2.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Scope Of Service</h4>
+                          <p>Service Support</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                
+                <!-- Doctors -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix doctors">
+                  <a href="{% static 'img/gallery/Dr Dhinnakaran babu MS Mch Urology.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/gallery/Dr Dhinnakaran babu MS Mch Urology.jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Our Doctors</h4>
+                          <p>DR DHINNAKARAN BABU MS,MCH Urology</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                  <a href="{% static 'img/genesysimg/gen-1.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-1.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Pharmacy</h4>
+						  <p>Medicine Stock</p>
+                        </div>
+                      </div>             
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                  <a href="{% static 'img/genesysimg/gen-14.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-14.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Billing</h4>
+						  <p>Invoice System</p>
+                        </div>
+                      </div>             
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                  <a href="{% static 'img/genesysimg/gen-3.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-3.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Consultant Room</h4>
+						  <p>Comfort Zone</p>
+                        </div>
+                      </div>             
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                  <a href="{% static 'img/gen-34.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/gen-34.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Waiting Hall</h4>
+						  <p>Patient</p>
+                        </div>
+                      </div>             
+                    </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                  <a href="{% static 'img/genesysimg/gen-27.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-27.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Labour Theater</h4>
+ 						  <p>Comfort care</p>
+                          <!--<span class="fa fa-eye"></span></a>
+                          <a href="#" class="aa-link"><span class="fa fa-link"></span></a>-->
+                        </div>
+                      </div>             
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 mix others">
+                   <a href="{% static 'img/genesysimg/gen-26.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/genesysimg/gen-26.jpeg' %}">
+                      </div>
+                      <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Course Training</h4>
+						  <p>Skill Development</p>
+                        </div>
+                      </div>             
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                 <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix library">
+                  <a href="{% static 'img/gen-28.jpeg' %}" data-fancybox-group="gallery" class="fancybox">
+                  <div class="mu-single-gallery">                  
+                    <div class="mu-single-gallery-item">
+                      <div class="mu-single-gallery-img">
+                        <img alt="img" src="{% static 'img/gen-28(1).jpeg' %}">
+                      </div>
+                       <div class="mu-single-gallery-info">
+                        <div class="mu-single-gallery-info-inner">
+                          <h4>Labour Theater</h4>
+ 						  <p>Comfort care</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <!-- start single gallery image -->
+                <li class="col-md-4 col-sm-6 col-xs-12 mix admin">
+                  <a href="{% static 'img/gen-29.jpeg' %}" data-fancybox="gallery" class="fancybox">
+                    <div class="mu-single-gallery">
+                      <div class="mu-single-gallery-item">
+                        <div class="mu-single-gallery-img">
+                          <img alt="img" src="{% static 'img/gen-29.jpeg' %}">
+                        </div>
+                        <div class="mu-single-gallery-info">
+                          <div class="mu-single-gallery-info-inner">
+                            <h4>Administrative </h4>
+                            <p></p>
+                          </div>
+                        </div>             
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>            
+            </div>
+          </div>
+          <!-- end gallery content -->
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End gallery  -->
+
+{% endblock body %}

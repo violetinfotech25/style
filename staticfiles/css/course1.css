@@ -1,0 +1,31 @@
+.cosurse1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 250px; 
+    min-height: 1800px;
+    padding: 50px;
+}
+.cosurse1 h3 {
+    padding-top: 20px;
+    text-align: left;
+    color: red;
+    font-weight: 800;
+}
+.cosurse1 p{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cosurse1 h4 {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.cosurse1 h6 {
+    font-weight: 600;
+    font-size: 16px;
+}
+.cosurse1 ul {
+    padding-top: 20px;
+    padding-left: 20px;
+    list-style: disc;
+}

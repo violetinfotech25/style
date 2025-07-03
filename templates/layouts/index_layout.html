@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="{% static 'favicon.ico/magudam-logo-png.png' %}" type="image/png">
+    <title>Magudam - {% block title %}{% endblock title %}</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/course1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/course2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}" type="text/css" media="screen">
+    <link id="switcher" rel="stylesheet" href="{% static 'css/theme-color/default-theme.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/slick.js' %}"></script>
+    <script src="{% static 'js/waypoints.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.js' %}"></script>
+    <script src="{% static 'js/jquery.mixitup.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/popup.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init({ publicKey: "1A_7Gq1gphTl_GoWp" });
+        })();
+    </script>
+    <style>
+        #mu-testimonial{
+            background-image: url("{% static 'img/gen-18_bg.jpeg' %}");
+        }
+    </style>
+</head>
+
+<body>
+    {% include "inc/Header.html" %}
+    {% include "inc/Navbar.html" %}
+    <div class="chatbot-icon">
+        <a href="https://wa.me/919698002969" target="_blank" class="whatsapp-chat">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    {% block body %}
+    {% endblock body %}
+    {% include "inc/Footer.html" %}
+</body>
+</html>
