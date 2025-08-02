@@ -1,0 +1,67 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}HAE-DHNM-847{% endblock title %}
+{% block body %}
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- Page breadcrumb -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Contact</h2>
+           <ol class="breadcrumb">
+            <li><a href="{% url 'course' %}">Course</a></li>            
+            <li class="active">HAE-DHNM-847</li>
+          </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
+<section class="container">
+    <div class="container cosurse2">
+        <h3>Welcome to HAE-DHNM-847: Advanced Human Neurogenetics & Molecular Diagnostics</h3>
+        <p>Discover the intricate relationship between DNA and the human nervous system. HAE-DHNM-847 is a high-level course designed to bridge the gap between genomic science and clinical applications in neurology and molecular diagnostics.</p>
+        <p><a class="btn btn-primary" href="{% url 'apply' %}">Enroll Now</a>- Start your journey into the molecular world.</p>
+        <h3>About the Course</h3>
+        <p><h4>Course Title:</h4> HAE-DHNM-847 – Advanced Human Neurogenetics and Molecular Diagnostics</p>
+        <h4>Overview:</h4>
+        <p>This intensive, research-driven course delves into the molecular basis of neurological diseases, the role of human genetics in diagnosis and treatment, and advanced techniques in molecular diagnostics. Students will examine real case studies, genetic screening tools, and bioinformatics pipelines used in modern medical research.</p>
+        <h6>What You’ll Learn:</h6>
+        <ul>
+            <li>Human neurogenetics and brain-related gene functions</li>
+            <li>Molecular diagnostic tools and clinical application</li>
+            <li>Next-Generation Sequencing (NGS) for neurological conditions</li>
+            <li>Ethical considerations in genetic testing</li>
+            <li>Integrating genomics with neurobiology</li>
+        </ul>
+        <h3>Curriculum</h3>
+        <p><h6>Module 1</h6> – Introduction to Neurogenetics</p>
+        <p><h6>Module 2</h6> – Genetic Basis of Neurological Disorders</p>
+        <p><h6>Module 3</h6> – Diagnostic Tools: NGS, Microarrays, qPCR</p>
+        <p><h6>Module 4</h6> – Bioinformatics in Clinical Neurogenetics</p>
+        <p><h6>Module 5</h6> – Personalized Medicine and Genetic Counseling</p>
+        <p><h6>Module 6</h6> – Capstone Project: Case-Based Neurogenetic Analysis</p>
+        <h3>Instructor</h3>
+        <h6>Dr. Rafael Kimura, MD, PhD</h6>
+        <p>Renowned neurologist and molecular genetics researcher with dual appointments in medical genetics and neuroscience. Dr. Kimura brings a unique clinical perspective combined with cutting-edge research insight.</p>
+        <h3>Who Should Enroll</h3>
+        <ul>
+            <li>Medical and graduate students in genetics, neuroscience, or molecular biology</li>
+            <li>Clinical researchers and lab specialists</li>
+            <li>Genetic counselors and neurobiology educators</li>
+            <li>Healthcare professionals involved in diagnostics</li>
+            <li>Students of HAE-DNA-846 seeking next-level study</li>
+        </ul>
+        <h3>Enroll Now</h3>
+        <p>Take your understanding of DNA, neurology, and diagnostics to the next level with HAE-DHNM-847.</p>
+        <a class="btn btn-primary" href="{% url 'apply' %}">Enroll Now</a>
+    </div>
+</section>
+{% endblock body %}

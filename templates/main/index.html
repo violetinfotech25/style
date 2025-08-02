@@ -1,0 +1,407 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}Home{% endblock title %}
+{% block body %}
+
+<!-- Popup Modal -->
+
+<div id="popup" class="popup-container">
+  <div class="popup-content">
+    <a class="navbar-brand" href="{% url 'home' %}">
+      <img src="{% static 'img/pop_up.png' %}" alt="Logo">
+    </a>
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+  </div>
+</div>
+
+<div id="mu-search">
+      <div class="mu-search-area">      
+        <button class="mu-search-close"><span class="fa fa-close"></span></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">            
+              <form class="mu-search-form">
+                <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End search box -->
+  <!-- Start Slider -->
+  <section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="{% static 'img/first-bg.png' %}" alt="">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h2>Be a Part of <br> Magudam Education</h2>
+        <span></span>
+        <h3><b>Education for eligible candidates</b></h3>
+        <p style="padding: 20px;">At Magudam, our admission process is designed to support deserving candidates. <br>
+           Whether you're just graduating from school or looking to advance your career, <br> We at Genesis have a course for you.</p>    
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="{% static 'img/gen-15.jpeg' %}" style="width: 100%;" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content" style='margin-top: 2.5em;'>
+        <h2>Wisdom with Compassion</h2>
+        <span></span>
+        <h3 style='margin-top: 3em;'><b>Our alumni are making an impact across the globe</b></h3>
+
+        <!-- <h4>Education is a vital first step for anyone passionate 
+          about caring for others and making a real difference in people's lives.</h4> -->
+        <!-- <a href="#" class="mu-read-more-btn">Read More</a> -->
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="{% static 'img/genesysimg/gen-6-carousel.jpeg' %}" style="width: 100%;" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content" style='margin-top: 2.5em;'>
+        <h2>Innovation in education <br>isn't an option it's the way forward.</h2>
+        <span></span>
+        <h3><b>"Educate. Empower. Inspire."</b></h3>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+  </section>
+  <!-- End Slider -->
+  <!-- Start service  -->
+  <section id="mu-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-service-area">
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-book"></span>
+              <h3>Learn Online</h3>
+              <p>Join thousands of students who are learning  online with expert instructors, real-world simulations, 
+                and flexible schedules.</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-users"></span>
+              <h3>Expert teachers</h3>
+              <p>Our faculty includes experienced nurses, healthcare professionals, and academic leaders dedicated to your success.</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-table"></span>
+              <h3>Best Classrooms</h3>
+              <p>Smart, spacious, and fully equipped for hands-on nursing education.</p>
+            </div>
+            <!-- Start single service -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End service  -->
+
+  <!-- Start about us -->
+  <section id="mu-about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-about-us-area">           
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="mu-about-us-left">
+                  <!-- Start Title -->
+                  <div class="mu-title">
+                    <h2>About Us</h2>              
+                  </div>
+                  <!-- End Title -->
+                  <p> At Magudam Educational Training, we are committed to shaping the future of healthcare through excellence in nursing education.
+                    With expert faculty, state-of-the-art facilities, and a student-centered approach, 
+                    we empower aspiring nurses to become skilled, compassionate, and confident professionals ready to serve the world.</p>
+                  <ol>
+                    <li> Career-Focused Programs: Offering HAE-DNA-846.</li>
+                    <li> Career-Focused programs: offering HAE-DHNM-847.</li>
+                   <!-- <li>Expert Faculty: Experienced professionals and industry mentors</li>
+                    <li>Practical Training: Hands-on experience with top hospitals and clinical labs.</li>
+                    <li>Modern Learning: Smart classrooms, e-learning tools, and simulation labs.</li>
+                    <li>Prime Location: Easily accessible campus with excellent facilities.</li>-->                  
+                  </ol>
+                  <p>Nursing is more than just a job—it’s a calling. From job security to the chance to make a real difference, 
+                    here’s why nursing could be the perfect career for you.
+                    </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="mu-about-us-right">                            
+                <a id="mu-abtus-video" href="https://www.youtube.com/embed/HN3pm9qYAUs" target="mutube-video">
+                  <img src="{% static 'img/genesysimg/gen-about-full.jpeg' %}" alt="img">
+                </a>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End about us -->
+
+  <!-- Start about us counter -->
+ <!-- <section id="mu-abtus-counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-abtus-counter-area">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mu-abtus-counter-single">
+                  <span class="fa fa-book"></span>
+                  <h4 class="counter">568</h4>
+                  <p>Subjects</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mu-abtus-counter-single">
+                  <span class="fa fa-users"></span>
+                  <h4 class="counter">15000</h4>
+                  <p>Students</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mu-abtus-counter-single">
+                  <span class="fa fa-flask"></span>
+                  <h4 class="counter">65</h4>
+                  <p>Modern Lab</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mu-abtus-counter-single no-border">
+                  <span class="fa fa-user-secret"></span>
+                  <h4 class="counter">250</h4>
+                  <p>Teachers</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <!-- End about us counter -->
+
+  <!-- Start features section -->
+  <section id="mu-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="mu-features-area">
+                    <!-- Start Title -->
+                    <div class="mu-title">
+                        <h2>Our Features</h2>
+                        <p>
+                            "At Magudam education, we combine quality education, practical training, and student
+                            support to create a complete learning experience for future healthcare heroes."
+                        </p>
+                    </div>
+                    <!-- End Title -->
+
+                    <!-- Start features content -->
+                    <div class="mu-features-content">
+                        <div class="row">
+                            <!-- Feature 1 -->
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="mu-single-feature">
+                                    <span class="fa fa-book"></span>
+                                    <h4><b>Professional Courses</b></h4>
+                                    <p>At Magudam Education, our professional nursing courses are designed to equip students with the knowledge, skills, and confidence needed to excel in the ever-evolving healthcare field.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="mu-single-feature">
+                                    <span class="fa fa-users"></span>
+                                    <h4><b>Expert Teachers</b></h4>
+                                    <p>Our faculty is the backbone of our success. 
+                                      Each member is a highly qualified healthcare professional with years of clinical and teaching experience. They are dedicated to mentoring, guiding, and inspiring students to become confident, compassionate nurses.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="mu-single-feature">
+                                    <span class="fa fa-laptop"></span>
+                                    <h4><b>Online Learning</b></h4>
+                                    <p>Learning has never been more accessible. Our online programs are designed for convenience without compromising quality.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                              <div class="mu-single-feature">
+                                <span class="fa fa-certificate"></span>
+                                <h4><b>Professional Certificate</b></h4>
+
+                                <a href="#" id="download-cert" class="download-btn">
+                                  Download Certificate
+                                </a>
+                              </div>
+                            </div>
+                        </div> <!-- End row -->
+                    </div> <!-- End features content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- End features section -->
+  <!-- Start latest course section -->
+  <section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="mu-title">
+      <h2>Our Course</h2>
+      <p>
+          "At Magudam education, we combine quality education, practical training, and student
+          support to create a complete learning experience for future healthcare heroes."
+      </p>
+  </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 5rem;">
+
+      <div class="row gy-5">
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-item">
+            <div class="img">
+              <img src="{% static 'img/genesysimg/gen-7.jpeg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/128/2490/2490419.png" width="30px" alt="">
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>HAE-DNA-846</h3>
+              </a>
+              <p>Diploma in Nursing Assistant <br> <b>2 YEARS</b></p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-item">
+            <div class="img">
+              <img src="{% static 'img/genesysimg/gen-9.jpeg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/128/1988/1988521.png" width="30px" alt="">
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>HAE-DHNM-847</h3>
+              </a>
+              <p>Diploma in Hospital Nursing & midwifery  <br> <b>2 YEARS</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Services Section -->
+  
+  <!-- End latest course section -->
+
+  
+
+  <!-- Start testimonial -->
+  <section id="mu-testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-testimonial-area">
+            <div id="mu-testimonial-slide" class="mu-testimonial-content">
+              <!-- start testimonial single item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p> “The DNA & DHNM course was incredibly hands-on and practical. The simulations felt real, and the instructors were so supportive. 
+                      I walked away feeling more confident in emergency situations.”</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="{% static 'img/gen-30.jpeg' %}" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Jenifer</h4>
+                  <span>Happy Student</span>
+                </div>
+              </div>
+              <!-- end testimonial single item -->
+              <!-- start testimonial single item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>“ As a new NICU nurse, the Neonatal Nursing Essentials course was exactly what I needed. 
+                      The blend of videos, live sessions, and downloadable guides made learning super convenient.”</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="{% static 'img/gen-32.jpeg' %}" alt="img" width="96">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Sanmathi</h4>
+                  <span>Happy Student</span>
+                </div>
+              </div>
+              <!-- end testimonial single item -->
+              <!-- start testimonial single item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>“ As a new NICU nurse, the Neonatal Nursing Essentials course was exactly what I needed. 
+                      The blend of videos, live sessions, and downloadable guides made learning super convenient.”</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="{% static 'img/gen-33.jpeg' %}" alt="img" width="96">
+
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Priya dharshini</h4>
+                  <span>Happy Student</span>
+                </div>
+              </div>
+              <!-- end testimonial single item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End testimonial -->
+{% endblock body %}
+ 

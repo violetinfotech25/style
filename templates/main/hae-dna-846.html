@@ -1,0 +1,67 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}HAE-DNA-846{% endblock title %}
+{% block body %}
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- Page breadcrumb -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Contact</h2>
+           <ol class="breadcrumb">
+            <li><a href="{% url 'course' %}">Course</a></li>            
+            <li class="active">HAE-DNA-846</li>
+          </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
+<section class="container">
+    <div class="container cosurse1">
+        <h3>Welcome to HAE-DNA-846: Exploring the Foundations of Human and Environmental DNA</h3>
+        <p>Unlock the mysteries of DNA and its application in human genetics, environmental science, and forensic analysis. Whether you're a student, researcher, or professional, this course provides a comprehensive introduction to DNA technologies and analysis methods.</p>
+        <p><a class="btn btn-primary" href="{% url 'apply' %}">Enroll Now</a>- Start your journey into the molecular world.</p>
+        <h3>About the Course</h3>
+        <p><h4>Course Title:</h4>HAE-DNA-846 – Human and Environmental DNA Analysis</p>
+        <h4>Overview:</h4>
+        <p>This advanced-level course is designed to offer a deep dive into the structure, function, and analytical techniques related to human and environmental DNA. Students will explore topics ranging from genetic markers and forensic applications to environmental DNA (eDNA) sampling and bioinformatics.</p>
+        <h6>What You’ll Learn:</h6>
+        <ul>
+            <li>DNA structure and replication</li>
+            <li>PCR, sequencing, and electrophoresis</li>
+            <li>Forensic DNA analysis</li>
+            <li>Environmental DNA (eDNA) collection and interpretation</li>
+            <li>Bioinformatics tools for DNA data</li>
+        </ul>
+        <h3>Curriculum</h3>
+        <p><h6>Module 1</h6> – Introduction to DNA</p>
+        <p><h6>Module 2</h6> – Laboratory Techniques (PCR, Gel Electrophoresis)</p>
+        <p><h6>Module 3</h6> – Human Genetics and Forensic Applications</p>
+        <p><h6>Module 4</h6> – Environmental DNA and Ecological Monitoring</p>
+        <p><h6>Module 5</h6> – Data Analysis and Bioinformatics</p>
+        <p><h6>Module 6</h6> – Capstone Project: Real-World DNA Case Study</p>
+        <h3>Instructor</h3>
+        <h6>Dr. Elena Moore, PhD</h6>
+        <p>Molecular Biologist and eDNA Specialist with over 15 years of research and teaching experience. Dr. Moore brings both academic and field expertise to guide students through real-world applications of DNA science.</p>
+        <h3>Who Should Enroll</h3>
+        <ul>
+            <li>Graduate students in biology or forensic science</li>
+            <li>Environmental scientists and conservationists</li>
+            <li>Lab technicians and genetic researchers</li>
+            <li>Law enforcement and forensic professionals</li>
+            <li>Curious learners with a science background</li>
+        </ul>
+        <h3>Enroll Now</h3>
+        <p>Join the HAE-DNA-846 course today and gain the skills to work at the cutting edge of genetic and environmental science.</p>
+        <a class="btn btn-primary" href="{% url 'apply' %}">Enroll Now</a>
+    </div>
+</section>
+{% endblock body %}

@@ -1,0 +1,124 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}Apply{% endblock title %}
+{% block body %} 
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Apply Now</h2>
+           <ol class="breadcrumb">
+            <li><a href="{% url 'home' %}">Home</a></li>            
+            <li class="active">Apply Now</li>
+          </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
+<!-- Start course application form section -->
+<section id="custom-course-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="custom-course-form-area">
+          <h2>Apply for Course</h2>
+          {% if messages %}
+          {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}"
+            style="padding: 10px; border-radius: 5px; margin-bottom: 15px; background-color: {% if message.tags == 'success' %}#d4edda{% elif message.tags == 'warning' %}#fff3cd{% elif message.tags == 'error' %}#f8d7da{% else %}#e2e3e5{% endif %}; color: #000;">
+            {{ message }}
+          </div>
+          {% endfor %}
+          {% endif %}
+          <form action="{% url 'apply' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+              <!-- Existing fields... -->
+              <div class="col-md-6">
+                <div class="custom-form-group">
+                  <label for="custom-name">Name</label>
+                  <input name="name" type="text" id="custom-name" class="custom-form-control" placeholder="Enter your name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-form-group">
+                  <label for="custom-email">Email</label>
+                  <input name="email" type="email" id="custom-email" class="custom-form-control" placeholder="Enter your email" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-form-group">
+                  <label for="custom-address">Address</label>
+                  <input name="address" type="text" id="custom-address" class="custom-form-control" placeholder="Enter your address" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-form-group">
+                  <label for="custom-contact">Contact</label>
+                  <input name="contact" type="tel" id="custom-contact" class="custom-form-control" placeholder="Enter your contact number" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-form-group">
+                  <label for="custom-course">Course</label>
+                  <select name="course" id="custom-course" class="custom-form-control" required>
+                    <option value="">Select a course</option>
+                    <option value="medical">HAE-DNA-846</option>
+                    <option value="engineering">HAE-DHNM-847</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Optional Mark Sheet Upload -->
+              <div class="col-md-6">
+                <div class="custom-form-group">
+                  <label for="custom-marksheet" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <span>Upload Mark Sheet</span>
+                    <small style="font-size: 12px; color: #777;">(optional)</small>
+                  </label>
+                  <div style="margin-top: 5px;">
+                    <input type="file" id="custom-marksheet" name="marksheet" accept=".pdf,.jpg,.jpeg,.png">
+                    <label class="file-label" for="custom-marksheet" id="custom-marksheet-label"></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Optional Aadhar Upload -->
+              <div class="col-md-12">
+                <div class="custom-form-group">
+                  <label for="custom-aadhar" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <span>Upload Aadhar Card</span>
+                    <small style="font-size: 12px; color: #777;">(optional)</small>
+                  </label>
+                  <div style="margin-top: 5px;">
+                    <input type="file" id="custom-aadhar" name="aadhar" accept=".pdf,.jpg,.jpeg,.png">
+                    <label class="file-label" for="custom-aadhar" id="custom-aadhar-label"></label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-12">
+                <div class="custom-form-group">
+                  <label for="custom-message">Message</label>
+                  <textarea name="message" id="custom-message" class="custom-form-control" placeholder="Enter your message" rows="4" required></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="custom-submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock body %}

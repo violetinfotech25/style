@@ -1,0 +1,61 @@
+{% extends "layouts/index_layout.html" %}
+{% load static %}
+{% block title%}Contact{% endblock title %}
+{% block body %}
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- Page breadcrumb -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Contact</h2>
+           <ol class="breadcrumb">
+            <li><a href="{% url 'home' %}">Home</a></li>            
+            <li class="active">Contact</li>
+          </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End breadcrumb -->
+    
+<section class="empty"></section>
+<section class="contact-section-contact">
+  <h2><u>Let’s get connected</u></h2>
+
+<div class="contact-grid">
+  <div class="contact-left contact-details">
+    <h3>Contact Details</h3>
+    <meta charset="UTF-8">
+  <title>WhatsApp Icon Example</title>
+  <!-- ✅ CDN: Load Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+                 <a href="https://wa.me/919698002969" target="_blank"> 
+    <i class="fab fa-whatsapp" style="font-size: 20px; color: green;"></i>
+                   Chat with us
+    <p><b></b> <a href="tel:+919698002969">+91 9698002969</a></p>
+    <p><b></b> <a href="tel:+919150522969">+91 9150522969</a></p>
+                   <p><b></b> <a href="Email:magudamedu@gmail.com">magudamedu@gmail.com </a></p>
+    <p><b>Address:</b> <br> No 59- 62,Basement, puliyakulam main road, Coimbatore - 641045,<br></p>
+  </div>
+
+  <div class="contact-right contact-details">
+    <h3>How to Reach Us</h3>
+    <p>Our location is conveniently situated on easily arrived and accessible by bus and train.</p>
+    <a target="_blank">
+      Get Directions to Magudam Educations
+    </a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15665.690122871247!2d76.991625!3d11.006891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859c91f7aa51f%3A0xe5664fc97c0dd372!2sMagudam!5e0!3m2!1sen!2sin!4v1747729226474!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+  <!--<a class="top-button" href="#top">Top</a>-->
+</section>
+{% endblock body %}
